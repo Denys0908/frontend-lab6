@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Сардаковський Денис, ІК-44, Лабораторна робота 6, Варіант 24, JavaScript, JSON, Fetch API, Promise, RandomUser">
+  <meta name="description" content="Лабораторна робота №6 студента Сардаковського Дениса. Отримання даних у форматі JSON із зовнішнього API за допомогою fetch та Promise.">
+  <title>Сардаковський Д.О. Група ІК-44 Лаб№6 Вар№24</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <h1 class="visually-hidden">Лабораторна робота №6. Варіант 24 — Fetch API та JSON</h1>
+    <div class="control-panel">
+      <button type="button" id="btn-download" class="btn-download">Download</button>
+      <p id="status-message" class="status-message" aria-live="polite">
+        Натисніть «Download» для завантаження даних з API
+      </p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="users-section" aria-labelledby="users-heading">
+      <h2 id="users-heading" class="visually-hidden">Профілі користувачів з RandomUser API</h2>
+      <div id="users-container" class="users-grid" aria-live="polite">
+        <p class="empty-state">
+          Дані користувачів (picture, name, city, postcode, phone) з'являться тут після виконання запиту fetch().
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
